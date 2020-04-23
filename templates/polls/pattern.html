@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title> </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+<link rel="shortcut icon" href="{% static 'polls/logo.PNG' %}"  />
+</head>
+
+<body>
+<div class="header">
+  <h1>ЛАБОРАТОРИЯ СТВОЛОВЫХ КЛЕТОК МОЗГА</h1>
+</div>
+
+<div class="topnav">
+    <a class="menu"> M </a>
+    <a href="pattern.html"><img src="{% static 'polls/logo.PNG' %}" width="75" ></a>
+    <div    class="dropdown">
+    <a href="#" id="ar">Проекты</a>
+    <div class="dropdown-content">
+        <a href="#" id ="ar">Ишемия</a><br>
+        <a href="#" id ="ar">Травма</a><br>
+        <a href="#" id ="ar">Аутизм</a><br>
+        <a href="#" id ="ar">DALMATIAN</a><br>
+    </div>
+    </div>
+    <a href="articles.html" id="ar">Статьи</a>
+    <a href="employee.html" id="ar">Коллектив</a>
+
+    <a href="contacts.html" id="ar">Контакты</a>
+    <a href="about.html" id="ar">О лаборатории</a>
+    <a href="#" style="float:right" id="ar">Личный кабинет</a>
+</div>
+<div class='container'>
+    {%  block content %} {% endblock %}
+</div>
+
+
+
+<div class="footer">
+  <h2 style="font-size:12px">Автор сайта: Доронин Иван  <br> 2020</h2>
+
+</div>
